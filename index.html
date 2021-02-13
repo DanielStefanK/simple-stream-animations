@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stream Animation</title>
+  <script src="index.js"></script>
+</head>
+<style>
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  #image {
+    width: 100px;
+  }
+
+  .animate {
+    animation: ani 10s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes ani {
+    0% {
+      transform: translate(0px, 0px) rotate(0);
+    }
+
+    5% {
+      transform: translate(-300px ,-200px) rotate(-30deg);
+    }
+
+    50% {
+      transform: translate(-300px ,-200px) rotate(-30deg);
+    }
+
+    60% {
+      transform: translate(0px, 0px) rotate(0);
+    }
+  }
+</style>
+<body>
+  <div class="wrapper">
+    <img id="image" src="assets/cheeots-surprised.png">
+  </div>
+</body>
+</html>
