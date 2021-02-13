@@ -17,6 +17,9 @@
 
   #image {
     width: 100px;
+    height: 100px;
+    background: url("assets/cheeots-surprised.png") no-repeat;
+    background-size: 100px 100px;
   }
 
   .animate {
@@ -34,18 +37,27 @@
       transform: translate(-300px ,-200px) rotate(-30deg);
     }
 
+    30% {
+      background: url("assets/cheeots-laught.png") no-repeat;
+      background-size: 100px 100px;
+    }
+
     50% {
       transform: translate(-300px ,-200px) rotate(-30deg);
+      background: url("assets/cheeots-laught.png") no-repeat;
+      background-size: 100px 100px;
     }
 
     60% {
       transform: translate(0px, 0px) rotate(0);
+      background: url("assets/cheeots-surprised.png") no-repeat;
+      background-size: 100px 100px;
     }
   }
 </style>
 <body>
   <div class="wrapper">
-    <img id="image" src="assets/cheeots-surprised.png">
+    <div id="image" ></div>
   </div>
 </body>
 </html>
