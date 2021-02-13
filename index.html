@@ -20,6 +20,7 @@
     height: 100px;
     background: url("assets/cheeots-surprised.png") no-repeat;
     background-size: 100px 100px;
+    opacity: 0%;
   }
 
   .animate {
@@ -30,6 +31,7 @@
 
   @keyframes ani {
     0% {
+      opacity: 100%;
       transform: translate(0px, 0px) rotate(0);
     }
 
@@ -52,6 +54,10 @@
       transform: translate(0px, 0px) rotate(0);
       background: url("assets/cheeots-surprised.png") no-repeat;
       background-size: 100px 100px;
+      opacity: 100%;
+    }
+    100% {
+      opacity: 0%;
     }
   }
 </style>
